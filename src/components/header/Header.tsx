@@ -1,7 +1,12 @@
-import React from 'react'
+import logo from './logo.svg'
+
+
 
 export const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <img src={logo} alt='logo' />
+
+    </div>
   )
 }
