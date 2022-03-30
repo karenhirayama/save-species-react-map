@@ -1,5 +1,7 @@
-import { Box, Container, Typography } from "@mui/material"
-import { Map } from "./map/Map"
+import { Box, Container, Typography } from "@mui/material";
+import { Map } from "./map/Map";
+import leaf from '../../leaf.svg';
+
 
 export const About = () => {
   return (
@@ -19,7 +21,7 @@ export const About = () => {
           </Typography>
           <Box
             width={400}
-            mt={4}
+            mt={5}
           >
             <Typography
               sx={{
@@ -36,8 +38,20 @@ export const About = () => {
               Existem um total de XXXX espécies em ameaça de extinção e esse projeto visa mostrar essas espécies e as suas respectivas áreas.
               {<br />}
               {<br />}
-              Também vale ressaltar a importância da conservação das espécies e que esse trabalho de gerenciamento e identificação de espécies ameaçadas é muito importante para que providências sejam tomadas para reduzir as crescentes taxas de extinção.
+              Também vale ressaltar a importância da conservação das espécies e que o trabalho de gerenciamento e identificação de espécies ameaçadas é muito importante para que providências sejam tomadas para reduzir as crescentes taxas de extinção.
+              {<br />}
+              {<br />}
+              As informações aqui presentes fazem parte de uma base de dados extraído do Portal de Dados Abertos do Ministério do Meio Ambiente/Serviço Florestal Brasileiro.
             </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'center'
+              }}
+              mt={1}
+            >
+              <img src={leaf} alt='Leaf' />
+            </Box>
           </Box>
         </Box>
         <Map />
