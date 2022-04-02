@@ -1,7 +1,9 @@
-import React from 'react'
+import { MapInfo } from "./MapInfo"
 
 export const Map = () => {
   return (
-    <div>Map</div>
+    <div>
+      <MapInfo />
+    </div>
   )
 }
