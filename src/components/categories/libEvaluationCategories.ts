@@ -1,4 +1,4 @@
-export const evaluationCategories = [
+export const libEvaluationCategories = [
     {
         label: 'EXTINTA',
         abreviation: 'EX',
