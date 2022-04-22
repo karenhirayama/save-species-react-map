@@ -25,6 +25,9 @@ export const EvaluationCategories = () => {
           </AccordionDetails>
         </Accordion>
       ))}
+      <a href='https://www.icmbio.gov.br/ran/images/Arquivos/especies_ameacadas/categorias_criterios_iucn_2012.pdf'>
+        Informações extraídas do Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)
+      </a>
     </>
   )
 }
