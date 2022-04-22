@@ -23,9 +23,7 @@ export const Header = () => {
                 marginLeft: 1,
                 fontWeight: 600,
                 cursor: 'pointer',
-                '&:hover': {
-                  color: '#005359'
-                }
+                color: '#005359'
               }}
             >
               Save Species
@@ -47,7 +45,7 @@ export const Header = () => {
             </Typography>
           </Box>
         </Box>
-      </Container>
-    </Box>
+      </Container >
+    </Box >
   )
 }
