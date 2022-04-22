@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 import logo from './logo.svg'
 
 export const Header = () => {
@@ -26,7 +27,9 @@ export const Header = () => {
                 color: '#005359'
               }}
             >
-              Save Species
+              <Link to='/'>
+                Save Species
+              </Link>
             </Typography>
           </Box>
           <Box>
@@ -41,7 +44,9 @@ export const Header = () => {
                 }
               }}
             >
-              Categorias
+              <Link to='categorias'>
+                Categorias
+              </Link>
             </Typography>
           </Box>
         </Box>

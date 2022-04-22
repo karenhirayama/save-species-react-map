@@ -20,7 +20,7 @@ export const About = () => {
             Especies Ameaçadas em extinção
           </Typography>
           <Box
-            width={400}
+            maxWidth={500}
             mt={5}
           >
             <Typography
