@@ -2,3 +2,8 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}

@@ -6,22 +6,23 @@ export const Categories = () => {
   return (
     <>
       <Container maxWidth='lg'>
-        <Box mt={5}>
-          <Typography variant="h4"
-            sx={{
-              fontFamily: 'Raleway, sans-serif',
-              marginLeft: 1,
-              fontWeight: 600,
-              color: '#005359',
-              textAlign: 'start'
-            }}
+        <Grid container>
+          <Grid sm={6}
+            mt={5}
           >
-            Categorias de Avaliação
-          </Typography>
-          <Grid container>
-            <Grid sm={6}
-              mt={5}
-            >
+            <Box mt={5} mr={2}>
+              <Typography variant="h4"
+                sx={{
+                  fontFamily: 'Raleway, sans-serif',
+                  marginLeft: 1,
+                  fontWeight: 600,
+                  color: '#005359',
+                  textAlign: 'start',
+                  marginBottom: 4
+                }}
+              >
+                Categorias de Avaliação
+              </Typography>
               <Typography
                 sx={{
                   fontFamily: 'Raleway, sans-serif',
@@ -63,14 +64,15 @@ export const Categories = () => {
               >
                 <img src={leaf} alt='Leaf' />
               </Box>
-            </Grid>
-            <Grid sm={6}
-              mt={5}
-            >
-              <EvaluationCategories />
-            </Grid>
+            </Box>
+
           </Grid>
-        </Box>
+          <Grid sm={6}
+            mt={5}
+          >
+            <EvaluationCategories />
+          </Grid>
+        </Grid>
       </Container>
     </>
   )
