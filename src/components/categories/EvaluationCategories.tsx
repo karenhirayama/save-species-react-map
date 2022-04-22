@@ -1,6 +1,6 @@
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material"
 import { libEvaluationCategories } from "./libEvaluationCategories"
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 export const EvaluationCategories = () => {
@@ -10,7 +10,8 @@ export const EvaluationCategories = () => {
       {libEvaluationCategories.map((category) => (
         <Accordion>
           <AccordionSummary
-            // expendIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
             id={category.abreviation}
           >
             <Typography>
